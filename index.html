@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <div class="form">
+      <h1>Create Your Account</h1>
+      <form action="">
+        <div class="field">
+          <label for="fn" id="fn-label">First Name</label>
+          <input type="text" placeholder="Enter your First Name" id="fn"  />
+          <p class="rule fn" id="fn-empty">
+            <i class="fa-regular fa-circle-xmark"></i>You can't leave it empty
+          </p>
+          <p class="rule fn" id="fn-length">
+            <i class="fa-regular fa-circle-xmark"
+              ></i
+            >The first name must be at least 3 characters
+          </p>
+          <p class="rule fn" id="fn-special">
+            <i class="fa-regular fa-circle-xmark"
+              ></i
+            >The first name shouldn't contain special characters
+          </p>
+        </div>
+
+        <div class="field">
+          <label for="ln" id="ln-label">Last Name</label>
+          <input type="text" placeholder="Enter your Last Name" id="ln" />
+          <p class="rule ln" id="ln-empty">
+            <i class="fa-regular fa-circle-xmark"></i>You can't leave it empty
+          </p>
+          <p class="rule ln" id="ln-length">
+            <i class="fa-regular fa-circle-xmark"></i>The Last name must be at
+            least 3 characters
+          </p>
+          <p class="rule ln" id="ln-special">
+            <i class="fa-regular fa-circle-xmark"></i>The Last name shouldn't
+            contain special characters
+          </p>
+        </div>
+
+        <div class="field">
+          <label for="mail" id="mail-label">Email</label>
+          <input type="email" placeholder="Enter your Email" id="mail" />
+          <p class="rule mail" id="mail-empty">
+            <i class="fa-regular fa-circle-xmark"></i>You can't leave it empty
+          </p>
+          <p class="rule mail" id="mail-valid">
+            <i class="fa-regular fa-circle-xmark"></i>invalid email
+          </p>
+        </div>
+
+        <div class="field">
+          <label for="phone" id="phone-label">Phone</label>
+          <input
+            type="tel"
+            maxlength="10"
+            placeholder="Enter your Phone Number"
+            id="phone"
+          />
+          <p class="rule phone" id="phone-empty">
+            <i class="fa-regular fa-circle-xmark"></i>You can't leave it empty
+          </p>
+          <p class="rule phone" id="phone-length">
+            <i class="fa-regular fa-circle-xmark"></i>Phone number must be 10
+            digits
+          </p>
+          <p class="rule phone" id="phone-valid">
+            <i class="fa-regular fa-circle-xmark"></i>invalid phone number
+          </p>
+        </div>
+        <div class="field">
+          <label for="pass" id="pass-label">Password</label>
+          <div class="input"><input type="password" placeholder="Enter your Password" id="pass" v /><i class="fa-solid fa-eye-slash"></i></div>
+          <p class="rule pass" id="pass-empty">
+            <i class="fa-regular fa-circle-xmark"></i>You can't leave it empty
+          </p>
+          <p class="rule pass" id="pass-length">
+            <i class="fa-regular fa-circle-xmark"></i>Password must be at least
+            8 characters
+          </p>
+          <p class="rule pass" id="pass-small">
+            <i class="fa-regular fa-circle-xmark"></i>Password must contain at
+            least one small letter
+          </p>
+          <p class="rule pass" id="pass-capital">
+            <i class="fa-regular fa-circle-xmark"></i>Password must contain at
+            least one capital letter
+          </p>
+        </div>
+
+        <div class="field">
+          <label for="pass2" id="pass-label">Confirm Password</label>
+          <div class="input"><input type="password" placeholder="Confirm your Password" id="pass2"  /><i class="fa-solid fa-eye-slash"></i></div>
+
+          <p class="rule pass2" id="pass2-empty">
+            <i class="fa-regular fa-circle-xmark"></i>You can't leave it empty
+          </p>
+          <p class="rule pass2" id="pass2-similar">
+            <i class="fa-regular fa-circle-xmark"></i>Password doesn't match
+          </p>
+        </div>
+
+        <button>Submit</button>
+      </form>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
